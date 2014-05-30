@@ -6,12 +6,12 @@
 
 Enter recursive function below.
   
-Use "x" as variable. use square brackets to indicate first value.
+Use "x" as variable and commas to indicate first value, then "n" value respectively (no spaces please).
 <br>
 <br>
 Example:
 <br>
-x^2-2 [4]
+x^2-2,4,13
 <br>
 <br>
 </p>
@@ -23,14 +23,19 @@ x^2-2 [4]
 
 
 
-<button type="button" onclick="alert(myFunction(document.getElementById('txtBox')).value)">We all know Grace likes Aneek right?</button>
+<button type="button" onclick="alert(myFunction(userEquation, lvls, nVal).value)">We all know Grace likes Aneek right?</button>
 
 <script>
-function myFunction(input) {
-    return input;
+function myFunction(input, pos, n) {
+    
+ return myFunction(;
 }
 
+var userEquation = document.getElementById('txtBox');
 
+var lvls = document.getElementById('txtBox');
+
+var n = document.getElementById('txtBox');
 
 </script>
 
