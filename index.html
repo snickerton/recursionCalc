@@ -4,25 +4,34 @@
 
 <p>
 
-Enter recursive function below. 
+Enter recursive function below.
   
 Use "x" as variable. use square brackets to indicate first value.
-
+<br>
+<br>
 Example:
+<br>
 x^2-2 [4]
-  
+<br>
+<br>
 </p>
 
-<p id="recurInput"></p>
+<p id="main"></p>
 
 
-<input type="text" id="TEXTBOX_ID">
+<input type="text" id="txtBox">
+
+
+
+<button type="button" onclick="alert(myFunction(document.getElementById('txtBox')))">We all know Grace likes Aneek right?</button>
 
 <script>
 function myFunction(input) {
     return input;
 }
-document.getElementById("demo").innerHTML = myFunction("test");
+
+
+
 </script>
 
 </body>
