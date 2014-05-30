@@ -23,29 +23,29 @@ x^2-2,4,13
 
 
 
-<button type="button" onclick="myFunction(userEquation, 0, n, goalInput)">We all know Grace likes Aneek right?</button>
+<button type="button" onclick="myFunction(userEquation, 0, fn)">We all know Grace likes Aneek right?</button>
 
 <script>
 
 
 //myFunction(userEquation, lvls, nVal).value
 
-function myFunction(input, pos, n, goal) {
+function myFunction(currNum, pos) {
 
-if(pos == goal)    {
-document.getElementById("main").innerHTML = input;
+if(pos == goalInput)    {
+document.getElementById("main").innerHTML = currNum;
 }
 
-var x = n;//x because used in equation "input"
+var x = currNum;//x because used in equation
 
-return myFunction(eval(input), pos++, n, goal)
+return myFunction(eval(userEquation), pos++)
 }
 
-var userEquation = document.getElementById('txtBox');
+var userEquation = document.getElementById('userEq');
 
-var lvls = document.getElementById('txtBox');
+var goalInput = document.getElementById('nTotal');
 
-var n = document.getElementById('txtBox');
+var fn = document.getElementById('firstNum');
 
 </script>
 
