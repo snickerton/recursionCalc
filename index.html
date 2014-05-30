@@ -23,15 +23,22 @@ x^2-2,4,13
 
 
 
-<button type="button" onclick="alert(myFunction(userEquation, lvls, nVal).value)">We all know Grace likes Aneek right?</button>
+<button type="button" onclick="myFunction(userEquation, 0, n, goalInput)">We all know Grace likes Aneek right?</button>
 
 <script>
-function myFunction(input, pos, n) {
-    
- if(pos == n)
-   return input;
 
- return myFunction(;
+
+//myFunction(userEquation, lvls, nVal).value
+
+function myFunction(input, pos, n, goal) {
+
+if(pos == goal)    {
+document.getElementById("main").innerHTML = input;
+}
+
+var x = n;//x because used in equation "input"
+
+return myFunction(eval(input), pos++, n, goal)
 }
 
 var userEquation = document.getElementById('txtBox');
